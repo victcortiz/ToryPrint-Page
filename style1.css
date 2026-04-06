@@ -1,38 +1,49 @@
 body {
     margin: 0;
-    height: 120vh;
+    min-height: 100vh; /* mejor que height */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("descarga.jpg");
-    background-size: cover;       /* llena toda la pantalla */
-    background-position: center;  /* centrada */
-    background-repeat: no-repeat; /* no se repite */
+    background-image: url("descarga.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
 }
+
 .tablet {
     width: 90%;
- max-width: 800px;
+    max-width: 800px;
+    background-color: #b46080;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 40px auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
     display: flex;
-  flex-wrap: wrap;
-    height: 90%;
-  height: 600px;
-  background-color: #b46080;
-  border-radius: 25px;
-  padding: 15px;
-  margin: 40px auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    flex-direction: column; /* mejor para ordenar */
 }
 
 /* pantalla interna */
 .pantalla {
-  width: 100%;
-  height: 100%;
-  background-color: #fff0f5; /* rosa muy suave */
-  border-radius: 15px;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
+    width: 100%;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* 📱 responsive */
+@media (max-width: 768px) {
+    .tablet {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .pantalla {
+        padding: 15px;
+    }
 }
 .Btn {
     display: block;
