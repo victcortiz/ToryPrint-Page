@@ -126,3 +126,11 @@ a{
 img{
     width: 200px;
 }
+/* 📱 En celular */
+@media (max-width: 768px) {
+  .Btn {
+    width: 80%;        /* más ancho para que no se vea aplastado */
+    max-width: 250px;
+    margin: 20px auto; /* centrado abajo */
+  }
+}
